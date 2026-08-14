@@ -1,3 +1,7 @@
+// Must be the first import — gesture-handler needs to install itself before
+// any other module (especially on Android) for swipe gestures to work.
+import 'react-native-gesture-handler';
+
 import { registerRootComponent } from 'expo';
 
 import App from './App';

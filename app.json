@@ -35,7 +35,8 @@
         {
           "photosPermission": "ExpiryTrack uses your photos to let you attach a picture of a tracked product."
         }
-      ]
+      ],
+      "expo-font"
     ]
   }
 }

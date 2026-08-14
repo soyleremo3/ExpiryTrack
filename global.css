@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Theme tokens — first-frame defaults, before ThemeProvider's `vars()`
+ * provider (lib/theme.tsx) takes over the tree. Colors are space-separated
+ * RGB channels so Tailwind's `<alpha-value>` modifier keeps working (e.g.
+ * `bg-surface/50`). Values below are the LIGHT palette, matching the app's
+ * default theme preference ('system', which resolves to light on most first
+ * launches) so there's no flash before JS runs.
+ */
+:root {
+  --accent: 79 70 229; /* indigo-600 */
+  --bg: 248 250 252; /* slate-50 */
+  --surface: 255 255 255;
+  --surface-2: 241 245 249; /* slate-100 */
+  --hairline: 226 232 240; /* slate-200 */
+  --body: 15 23 42; /* slate-900 */
+  --muted: 71 85 105; /* slate-600 */
+  --faint: 148 163 184; /* slate-400 */
+}
